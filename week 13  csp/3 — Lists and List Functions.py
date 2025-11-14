@@ -55,17 +55,38 @@ del [my_list[ : : 3]]
 # .remove(value) - removes the first occurrence of the specified value
 # .extend(iterable) - adds all items from the iterable to the end of the list
 
+cakes = ['chocolate', 'vanilla', 'red velvet', 'carrot']
+print(cakes)
+#access the first item
+print(cakes[0]) # chocolate
+#access the last item
+print(cakes[-1]) # carrot
+# want to chocolate cake instead of vanilla
+cakes[0] = 'strawberry'
+print(cakes) # ['strawberry', 'vanilla', 'red velvet', 'carrot']
+# add a new cake to the end of the list
+cakes.append('lemon')
+print(cakes) # ['strawberry', 'vanilla', 'red velvet', 'carrot', 'lemon']
+cakes[1] = 'chocolate'
+print(cakes) # ['strawberry', 'chocolate', 'red velvet', 'carrot', 'lemon']
+# remove the last cake
+cakes.pop()
+print(cakes) # ['strawberry', 'chocolate', 'red velvet', 'carrot']
+# insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes) # ['strawberry', 'chocolate', 'funfetti', 'red velvet', 'carrot']
+
 # Examples:
 
-# my_list = ['apple', 'banana', 'cherry']
+my_list = ['apple', 'banana', 'cherry']
 # print(my_list[0])         # apple
 # print(my_list[1:])        # ['banana', 'cherry']
 
 # my_list.append('grape')
 # print(my_list)
 
-# my_list.pop(1)
-# print(my_list)
+my_list.pop(1)
+print(my_list)
 
 # numbers = [3, 1, 4, 2]
 # numbers.sort()
@@ -75,13 +96,16 @@ del [my_list[ : : 3]]
 # # Practice Problems:
 
 # # Create a list with 5 of your favorite foods.
-
+favorite_foods = ['pizza', 'sushi', 'tacos', 'ice cream', 'pasta']
 # # Print the second and last item.
-
+print(favorite_foods[1])
+print(favorite_foods[-1])
 # # Add a new item using .append().
-
+favorite_foods.append("french fries")
+print(favorite_foods)
 # # Remove the first item using .pop(0).
-
+favorite_foods.pop(0)
+print(favorite_foods)
 # # Reverse your list using .reverse().
-
-# # Create a list of 3 lists (matrix), and access the middle element.
+favorite_foods.reverse()
+print(favorite_foods)
