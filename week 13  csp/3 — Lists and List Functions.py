@@ -109,3 +109,21 @@ print(favorite_foods)
 # # Reverse your list using .reverse().
 favorite_foods.reverse()
 print(favorite_foods)
+
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+print(type(my_set))
+
+my_set.add(6)
+
+my_set.remove(3)
+print(my_set)
+
+print(4 in my_set)
+print(3 in my_set)
+
+my_tuple = {1, 2, 3, 4 , 5}
+print(my_tuple)
+print(type(my_tuple))
+print(my_tuple{0:})
+print(my_tuple[1:4])
