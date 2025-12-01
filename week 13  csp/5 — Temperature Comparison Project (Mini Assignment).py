@@ -12,3 +12,13 @@
 
 # Starter Code:
 
+tempature = int(input("What's today's tempature? "))
+
+if tempature in range(-10, 51):
+    print("It's cold.")
+elif tempature in range(51, 80):
+    print("It's warm.")
+elif tempature in range(80, 111):
+    print("It's hot.")
+else:
+    print("Extreme tempature warning!")
