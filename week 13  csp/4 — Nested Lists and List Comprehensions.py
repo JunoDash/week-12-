@@ -23,22 +23,22 @@
 # grocieries = [fruits, vegtables, meats]
 # print(grocieries[1][2]) # first is down, next is verticle
 
-grocieries = [["apple", "orange", "banana", "coconut"], 
-              ["celary", "carrots", "potatoes"], 
-              ["chicken", "fish", "turkey"]]
+# grocieries = [["apple", "orange", "banana", "coconut"], 
+#               ["celary", "carrots", "potatoes"], 
+#               ["chicken", "fish", "turkey"]]
 
-for collection in grocieries:
-    for food in collection:
-        print(food)
+# for collection in grocieries:
+#     for food in collection:
+#         print(food)
 
-num_pad = ((1, 2, 3),
-           (4, 5, 6),
-           (7, 8, 9),
-           ("*", 0, "#"))
+# num_pad = ((1, 2, 3),
+#            (4, 5, 6),
+#            (7, 8, 9),
+#            ("*", 0, "#"))
 
-for row in num_pad:
-    for num in row:
-        print(num, end=" ")
+# for row in num_pad:
+#     for num in row:
+#         print(num, end=" ")
 # Examples:
 
 # matrix = [
@@ -55,14 +55,30 @@ for row in num_pad:
 
 
 
-# # Practice Problems:
+# Practice Problems:
 
-# # Build a matrix variable containing 3 lists of 3 numbers each.
+# Build a matrix variable containing 3 lists of 3 numbers each.
 
-# # Print the first list.
+# Print the first list.
 
-# # Print the second item from the third list.
+# Print the second item from the third list.
 
-# # Use a list comprehension to extract the last item from each sub-list.
+# Use a list comprehension to extract the last item from each sub-list.
 
-# # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+# Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+
+print(matrix[0])
+print(matrix[2][1])
+
+last_item =[row[-1] for row in matrix]
+print(last_item)
+
+squares = [x**2 for x in range(1, 11)]
+for x in range(1, 11):
+    print(x**2)
+
+print(squares)
